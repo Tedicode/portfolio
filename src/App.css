@@ -2,31 +2,38 @@
   text-align: center;
 }
 
+body {
+  background-color: black;
+}
 .App-logo {
-  height: 40vmin;
+  /* height: 40vmin; */
+  height: 50%;
+  width: 50%;
   pointer-events: none;
+  /* z-index: 1; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 30s linear;
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #3f7cf5;
-  min-height: 50vh;
+  background-image: url("./sun.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  background-attachment: fixed;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -49,7 +56,7 @@
   color: rgb(250, 124, 124);
   background-color: antiquewhite;
   padding: 1.5rem;
-  margin: 1rem;
+  margin: 2.5rem;
   border: solid 1px rgb(250, 124, 124);
   border-radius: 10px;
   text-decoration: none;
@@ -60,23 +67,68 @@
 .card:active,
 .card:focus {
   color: rgb(250, 124, 124);
-}
-
-.card:active,
-.card:focus {
   background-color: white;
 }
 
-/* .card *:hover,
-*:active,
-*:focus {
-  color:rgb(250, 124, 124)
-} */
-
 .cluster {
-  border: solid 1px rgb(128, 90, 0);
+  /* border: solid 1px rgb(216, 157, 250); */
+  padding: 1.5rem;
+  width: 100vw;
+  height: 30vh;
+  z-index: 1;
+  /* background-color: rgb(255, 3, 188); */
+}
+
+.web {
+  /* background-color: rgb(53, 18, 43); */
+  background-color: rgb(254, 7, 73);
+}
+
+.other {
+  /* background-image: url("./chili-pepper.jpg"); */
+  background-size: contain;
+  background-color: rgb(255, 3, 188);
+  opacity: 0.9s;
+  background-attachment: fixed;
 }
 
 .container {
   display: flex;
+}
+
+.skill-card {
+  border: solid 1px purple;
+  border-radius: 10px;
+  background-color: rgb(241, 201, 177);
+  color: rgb(68, 13, 119);
+  padding: 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  /* background-color: #61dafb; */
+}
+
+.skill-collection {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  z-index: 5;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  position: absolute;
+  left: 46.5%;
+  height: 30vh;
+  z-index: 4;
+}
+
+.contact-link {
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
 }
