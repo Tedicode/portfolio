@@ -1,12 +1,13 @@
 import logo from "./logo.svg";
 import CardCollection from "./components/card-collection";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <CardCollection />
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -19,6 +20,14 @@ function App() {
           Learn React
         </a>
       </header>
+      <div className="container">
+        <span className="cluster">
+          <CardCollection />
+        </span>
+        <span className="cluster">
+          <CardCollection />
+        </span>
+      </div>
     </div>
   );
 }
