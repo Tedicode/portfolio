@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.card-collection {
+  display: flex;
+}
+.card {
+  text-align: left;
+  color: rgb(250, 124, 124);
+  background-color: antiquewhite;
+  padding: 1.5rem;
+  margin: 1rem;
+  border: solid 1px rgb(250, 124, 124);
+  border-radius: 10px;
+  text-decoration: none;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:active,
+.card:focus {
+  color: rgb(250, 124, 124);
+}
+
+.card:active,
+.card:focus {
+  background-color: white;
+}
+
+/* .card *:hover,
+*:active,
+*:focus {
+  color:rgb(250, 124, 124)
+} */
