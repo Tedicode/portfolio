@@ -48,6 +48,17 @@ body {
   }
 }
 
+.about-me {
+  font-size: 2rem;
+  color: rgb(68, 13, 119);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.my-work {
+  font-size: 2.5rem;
+  color: rgb(68, 13, 119);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 .card-collection {
   display: flex;
   flex-direction: row;
@@ -58,8 +69,8 @@ body {
   text-align: left;
   color: rgb(250, 124, 124);
   background-color: antiquewhite;
-  padding: 1.5rem;
-  margin: 2.5rem;
+  padding: 1.2rem;
+  margin: 1.5rem;
   border: solid 1px rgb(250, 124, 124);
   border-radius: 10px;
   text-decoration: none;
@@ -98,8 +109,11 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  /* width: fit-content;
-  height: fit-content; */
+  /* height: 30vh; */
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 70vh;
 }
 
 .skill-card {
@@ -136,14 +150,20 @@ body {
 
 .nav-options {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-
+  /*
   position: absolute;
   top: 1%;
-  left: 1%;
-  z-index: 5;
+  left: 1%; */
+  z-index: 13;
+}
+
+.topic-card:hover,
+.topic-card:active,
+.topic-card:focus {
+  background-color: antiquewhite;
 }
 
 .contact-me {
@@ -151,6 +171,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: end;
+  padding: 0.5rem;
   /* position: absolute;
   left: 46.5%;
   height: 30vh; */
@@ -175,4 +196,140 @@ body {
   top: 15%;
   left: 40%;
   width: 20%;
+}
+
+@media only screen and (max-width: 900px) {
+  .card-collection {
+    /* display: flex; */
+    flex-direction: row;
+  }
+  .cluster {
+    width: 100%;
+  }
+  .contact-me {
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    /* height: 30vh; */
+    width: 100%;
+
+    /* height: fit-content; */
+    /* position: absolute; */
+    top: 60vh;
+  }
+  .spotlight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+    color: white;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    width: 20%;
+  }
+
+  .skill-collection {
+    top: 10vh;
+  }
+
+  .App-logo {
+    /* height: 40vmin; */
+    height: 70%;
+    width: 70%;
+    pointer-events: none;
+    /* z-index: 1; */
+  }
+
+  .skill-card {
+    /* border: solid 1px purple;
+    border-radius: 10px;
+    background-color: rgb(248, 5, 119);
+    color: rgb(68, 13, 119);
+    padding: 1rem;
+    margin: 0.5rem; */
+    font-size: 0.8rem;
+    /* background-color: #61dafb; */
+  }
+
+  body {
+    background-color: black;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-collection {
+    flex-direction: row;
+  }
+
+  .container {
+    top: 45vh;
+  }
+
+  .contact-me {
+    width: 100%;
+    top: 95%;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: center;
+  }
+
+  /* .nav-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 5;
+  } */
+}
+
+@media only screen and (max-width: 400px) {
+  .card-collection {
+    flex-direction: column;
+  }
+
+  .container {
+    top: 40vh;
+  }
+
+  /* .nav-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 5;
+  } */
+
+  .App-logo,
+  .spotlight {
+    width: 90%;
+  }
+
+  .spotlight {
+    left: 8%;
+    top: 10%;
+  }
+
+  .skill-collection * {
+    margin: 0.2rem;
+    padding: 0.3rem;
+  }
 }

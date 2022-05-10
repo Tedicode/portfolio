@@ -1,5 +1,5 @@
-import "../App.css";
-import Skill from "./skill";
+import "../../App.css";
+import Skill from "../skill";
 
 export default function SkillCollection(props) {
   return (

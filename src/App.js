@@ -43,12 +43,12 @@ function App() {
 
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <p>About Me paragraph here</p>
-      </header> */}
+      <header className="App-header"></header>
+
       <img src={sun} className="App-logo" alt="logo" />
       <Spotlight topic={topic} />
       <NavOptions changeTopic={changeTopic} />
+
       <div className="container">
         <span className="cluster web">
           <CardCollection projects={webProjects} />

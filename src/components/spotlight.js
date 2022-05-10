@@ -1,5 +1,7 @@
-import SkillCollection from "./skill-collection";
-import AboutMe from "./about-me";
+import SkillCollection from "./Topics/skill-collection";
+import AboutMe from "./Topics/about-me";
+import Education from "./Topics/education";
+import MyWork from "./Topics/my-work";
 
 const listOfSkills = [
   { name: "Python" },
@@ -15,12 +17,13 @@ export default function Spotlight(props) {
   return (
     <div className="spotlight">
       {topic === "About Me" ? <AboutMe /> : <div></div>}
+      {topic === "Education" ? <Education /> : <div></div>}
+      {topic === "My Work" ? <MyWork /> : <div></div>}
       {topic === "My Skills" ? (
         <SkillCollection skillsList={listOfSkills} />
       ) : (
         <div></div>
       )}
-      {/* <SkillCollection skillsList={listOfSkills} /> */}
     </div>
   );
 }
