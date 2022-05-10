@@ -24,7 +24,7 @@ const webProjects = [
 const otherProjects = [
   {
     title: "Art",
-    content: "Some of my original paintings on ArtPal",
+    content: "My first medium of expressiom: painting!",
     link: "https://www.artpal.com/FunPaint",
   },
   {
@@ -36,7 +36,7 @@ const otherProjects = [
 ];
 
 function App() {
-  const [topic, setTopic] = useState("About Me");
+  const [topic, setTopic] = useState("Tedi");
   const changeTopic = (nextTopic) => {
     setTopic(nextTopic);
   };
