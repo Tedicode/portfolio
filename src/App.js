@@ -1,16 +1,11 @@
 // import logo from "./logo.svg";
+import { useState } from "react";
 import sun from "./sun-copy.jpeg";
 import CardCollection from "./components/card-collection";
-import SkillCollection from "./components/skill-collection";
 import ContactMe from "./components/contact-me";
+import Spotlight from "./components/spotlight";
 import "./App.css";
-
-const listOfSkills = [
-  { name: "Python" },
-  { name: "Ruby" },
-  { name: "SQL" },
-  { name: "HTML5" },
-];
+import NavOptions from "./components/nav-options";
 
 const webProjects = [
   {
@@ -41,19 +36,25 @@ const otherProjects = [
 ];
 
 function App() {
+  const [topic, setTopic] = useState("About Me");
+  const changeTopic = (nextTopic) => {
+    setTopic(nextTopic);
+  };
+
   return (
     <div className="App">
       {/* <header className="App-header">
         <p>About Me paragraph here</p>
       </header> */}
       <img src={sun} className="App-logo" alt="logo" />
-      <SkillCollection skillsList={listOfSkills} />
+      <Spotlight topic={topic} />
+      <NavOptions changeTopic={changeTopic} />
       <div className="container">
-        <ContactMe />
         <span className="cluster web">
           <CardCollection projects={webProjects} />
         </span>
-        <span className="cluster other">
+        <ContactMe />
+        <span className="cluster non-web">
           <CardCollection projects={otherProjects} />
         </span>
       </div>

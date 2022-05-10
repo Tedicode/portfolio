@@ -7,6 +7,7 @@ export default function CardCollection(props) {
     <div className="card-collection">
       {props.projects.map((project) => (
         <Card
+          key={project.title}
           title={project.title}
           content={project.content}
           link={project.link}
