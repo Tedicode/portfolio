@@ -11,12 +11,12 @@ const webProjects = [
   {
     title: "NeighborFave",
     content:
-      "A full-stack progressive web app for neighbors exchanging favors and chat",
+      "A full-stack progressive web app for neighbors exchanging favors and chat. (Our capstone project at FSA)",
     link: "https://github.com/cs-team-02/neighbor-fave",
   },
   {
     title: "Chocolatier",
-    content: "An E-commerce site for chocolates",
+    content: "An E-commerce site for chocolates. (A Team project at FSA)",
     link: "https://graceshopper-chocolates.herokuapp.com/",
   },
 ];
@@ -24,7 +24,7 @@ const webProjects = [
 const otherProjects = [
   {
     title: "Art",
-    content: "My first medium of expressiom: painting!",
+    content: "Some of my Canvas Paintings",
     link: "https://www.artpal.com/FunPaint",
   },
   {
